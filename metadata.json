@@ -1,0 +1,6 @@
+{
+  "name": "LinguaDuo - Apprentissage Anglais Bilingue & Arabe",
+  "description": "Plateforme d'apprentissage de l'anglais en double colonne bilingue (anglais-français) avec infobulles de traduction en arabe au survol et exercices interactifs.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

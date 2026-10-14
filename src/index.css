@@ -1,0 +1,59 @@
+@import "tailwindcss";
+
+@layer base {
+  body {
+    font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+    color: #1e293b;
+    background-color: #f8fafc;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+}
+
+.font-reading {
+  font-family: 'Source Serif 4', Georgia, Cambria, 'Times New Roman', serif;
+}
+
+.font-arabic {
+  font-family: 'Noto Sans Arabic', 'Amiri', 'Traditional Arabic', serif;
+}
+
+/* Custom subtle scrollbars for parallel columns */
+.custom-scrollbar::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+  border-radius: 9999px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb:hover {
+  background: #94a3b8;
+}
+
+/* Smooth word hover transition */
+.interactive-word {
+  display: inline-block;
+  cursor: pointer;
+  border-radius: 3px;
+  padding: 0 1.5px;
+  transition: all 0.15s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.interactive-word:hover {
+  background-color: #fef08a;
+  color: #854d0e;
+  box-shadow: 0 0 0 1px #facc15;
+}
+
+.interactive-word.active-matching {
+  background-color: #dbeafe;
+  color: #1e40af;
+  font-weight: 500;
+}
